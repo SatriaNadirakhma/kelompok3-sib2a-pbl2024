@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Grotesk:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans";
+}
+
+body {
+    margin: 0;
+    background-color: #f1f1f1;
+}
+
+.navbar{
+    position: fixed;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 600px;
+    padding: 0 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    background-color: #0071D3;
+    color: #f1f1f1;
+    top: 0;
+    left: 0;
+    width: 93%; /* Ensure it spans the screen */
+    z-index: 100
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar li{
+    display: inline;
+    color: #f1f1f1;
+    padding-left: 45px;
+}
+
+.logo .nav-logo{
+    width: 150px;
+    height: auto;
+    justify-items: center;
+}
+
+.link a{
+    color: #f1f1f1;
+}
+
+nav .link a:not(:last-child){
+    margin: 0 20px;
+}
+
+.login-button{
+    padding: 8px 16px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+}
+
+.login-button:hover {
+    background-color: #0071D3;
+    color: white;
+}
+
+.hero {
+    text-align: center;
+    padding-top: 120px;
+    background-color: #f1f1f1;
+}
+
+.hero h1{
+    padding-top: 40px;
+    font-size: 64px;
+    padding-bottom: 28px;
+}
+
+.hero p{
+    font-size: 28px;
+    padding-bottom: 40px;
+}
+
+.hero .stats {
+    margin: 120px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    background-color: #FFcc00;
+    border-radius: 28px;
+}
+
+.hero .stats div {
+    text-align: center;
+    padding: 24px;
+    border-radius: 10px;
+}
+
+.hero .stats div h2{
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.hero .stats div h5{
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.hero .stats div .divider{
+    width: 250px;
+    height: 5px;
+    background-color: black;
+    margin: 10px auto;
+}
+
+.cartoons {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.links {
+    text-align: center;
+    padding: 48px;
+    background-color: #141c20;
+}
+
+.links h2 {
+    padding-bottom: 16px;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #ffcc00;
+    padding: 40px;
+    border-radius: 16px;
+    width: 600px;
+    height: 400px;
+    text-align: left;
+}
+
+.card h3{
+    font-size: 48px;
+    padding-bottom: 2rem;
+}
+
+.card p{
+    font-size: 28px;
+}
+
+.motto{
+    padding: 80px;
+    background-color: #0071D3;
+    color: white;
+    text-align: center;
+    font-size: 48px;
+}
+
+.features{
+    justify-content: center;
+    text-align: center;
+    padding: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.features img{
+    max-width: 1000px;
+}
+
+.features img:hover{
+    filter: drop-shadow(0 0 20px rgba(0, 113, 211, 1));
+}
+
+.features h2{
+    font-size: 64px;
+    padding-bottom: 24px;
+}
+
+.features p{
+    font-size: 28px;
+}
+
+footer {
+    display: flex;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}

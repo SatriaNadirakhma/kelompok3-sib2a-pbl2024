@@ -21,3 +21,10 @@ Yang masih perlu diperbaiki:
 - ...bisa ditambahkan selagi ada yang perlu diubah
 ---------------------------
 
+U	- Unmerged changes (conflicts) during a merge.
+M	- Modified file (changes exist but not yet staged or committed).
+A	- File added to the staging area (newly tracked).
+D	- File deleted from the working directory.
+R	- Renamed file.
+C	- Copied file.
+??	-  Untracked file (new file not yet added to Git).

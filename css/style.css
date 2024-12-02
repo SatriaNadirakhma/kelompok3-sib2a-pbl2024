@@ -18,7 +18,7 @@ body {
     margin-left: 50px;
     margin-right: 50px;
     border-radius: 600px;
-    padding: 0 80px;
+    padding: 0 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,6 +32,7 @@ body {
 }
 
 .navbar ul {
+    margin-right: 100px;
     list-style-type: none;
     display: flex;
     gap: 20px;
@@ -49,9 +50,11 @@ body {
 }
 
 .logo .nav-logo{
-    width: 150px;
+    width: 125px;
     height: auto;
-    justify-items: center;
+    justify-items: flex;
+    margin-top: 5px;
+    margin-right: 10px;
 }
 
 .link a{
@@ -99,6 +102,17 @@ nav .link a:not(:last-child){
     border-radius: 28px;
 }
 
+.stats{
+  position: absolute;
+  top: 78%; /* Sesuaikan posisi stats */
+  left: 35%;
+  transform: translateX(-40%);
+  display: flex;
+  justify-content: space-around;
+  width: 80%; /* Lebar stats */
+  height: 275px;
+}
+
 .hero .stats div {
     text-align: center;
     padding: 24px;
@@ -107,19 +121,22 @@ nav .link a:not(:last-child){
 
 .hero .stats div h2{
     font-size: 64px;
-    font-weight: 600;
+    font-weight: 1000;
 }
 
 .hero .stats div h5{
     font-size: 36px;
-    font-weight: 400;
+    font-weight: 700;
 }
 
-.hero .stats div .divider{
-    width: 250px;
-    height: 5px;
-    background-color: black;
-    margin: 10px auto;
+hr{
+  border: 4px solid black; /* Tebal dan warna garis */
+  width: 80%; /* Panjang garis */
+  margin: 20px auto; /* Jarak vertikal dan posisi tengah */
+}
+
+.stats-internet {
+    margin-top: 25px;
 }
 
 .cartoons {
@@ -127,6 +144,35 @@ nav .link a:not(:last-child){
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
+}
+
+.cartoon-img {
+    display: flex; /* Gunakan flexbox untuk mengatur elemen secara horizontal */
+    justify-content: space-between; /* Atur jarak antar elemen secara merata */
+    align-items: center; /* Atur elemen agar sejajar secara vertikal */
+    width: 100%; /* Pastikan elemen mengambil seluruh lebar */
+    margin-top: -100px;
+  }
+  
+.cartoon1,
+.cartoon2 {
+    display: flex; /* Membuat gambar tetap berada di dalam kontainer */
+    justify-content: center; /* Pusatkan gambar di dalam elemen */
+}
+
+.cartoon1{
+    margin-left: 50px;
+    margin-bottom: 300px;
+}
+
+.cartoon2{
+    margin-right: 50px;
+}
+
+.background-cartoon{
+  position: relative;
+  height: auto;
+  /* padding-bottom: 10%; */
 }
 
 .links {
@@ -157,6 +203,7 @@ nav .link a:not(:last-child){
     width: 600px;
     height: 400px;
     text-align: left;
+    
 }
 
 .card h3{

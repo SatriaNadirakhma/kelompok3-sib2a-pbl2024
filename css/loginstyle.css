@@ -1,0 +1,193 @@
+/* General Reset */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #0a198b;
+    color: #fff;
+    overflow: hidden;
+    animation: fadeIn 2s ease-out; /* Animasi fade-in untuk background */
+}
+
+/* Welcome Message */
+.welcome-message {
+    text-align: center;
+    margin-bottom: 30px;
+    animation: slideInTop 1.5s ease-out; /* Animasi slide-in untuk judul */
+}
+
+.welcome-text {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 600;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    animation: textFadeIn 2s ease-out; /* Animasi tulisan fade-in */
+}
+
+/* Login Form */
+.login-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    color: #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: scaleIn 1s ease-out; /* Animasi scale-in untuk form login */
+}
+
+.login-container:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/* Form Inputs */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+    animation: fadeInUp 1s ease-out; /* Animasi input form dari bawah */
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-out; /* Animasi input muncul perlahan */
+}
+
+input:focus, select:focus {
+    border-color: #1976D2;
+    outline: none;
+    box-shadow: 0 0 8px rgba(25, 118, 210, 0.5);
+}
+
+/* Dropdown Styling */
+select {
+    background-color: #f9f9f9;
+    color: #333;
+    cursor: pointer;
+}
+
+select option {
+    background: #fff;
+    color: #333;
+}
+
+/* Button */
+.btn {
+    background: linear-gradient(90deg, #1976D2, #42A5F5);
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 500;
+    box-shadow: 0 4px 10px rgba(25, 118, 210, 0.3);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 1.3s ease-out; /* Animasi tombol muncul dengan efek */
+}
+
+.btn:hover {
+    background: linear-gradient(90deg, #1565C0, #42A5F5);
+    box-shadow: 0 6px 15px rgba(25, 118, 210, 0.5);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInTop {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes textFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+    .welcome-message h1 {
+        font-size: 24px;
+    }
+    .login-container {
+        padding: 20px;
+    }
+}
+
+/* Logo Styling */
+.logo {
+    width: 200px; /* Ukuran logo yang lebih kecil */
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-out; /* Efek animasi logo */
+}

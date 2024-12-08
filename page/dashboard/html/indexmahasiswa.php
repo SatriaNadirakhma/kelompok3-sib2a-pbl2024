@@ -7,34 +7,16 @@
     <link rel="stylesheet" href="/page/dashboard/css/stylemahasiswa.css">
     <link rel="icon" href="/images/favicon.png" type="image/png">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="script" href="/js/script.js">
+    <link rel="script" href="/page/dashboard/css/stylemahasiswa.css">
 </head>
 <body>
     
     <div class="dashboard">
-        <!-- Sidebar -->
-        <div class="sidebar">
-            <div class="logo">
-                <img src="/images/logo.png" alt="Logo JTI">
-                <h2>Tata Tertib JTI</h2>
-            </div>
-            <ul class="menu">
-                <li class="active"><span class="material-icons">home</span> Halaman Awal</li>
-                <li><span class="material-icons">list</span> Pelanggaran Tata Tertib</li>
-                <li><span class="material-icons">description</span> Pengajuan Surat Izin</li>
-                <li><span class="material-icons">assignment</span> Pengajuan Kompensasi</li>
-                <li><span class="material-icons">notifications</span> Notifikasi</li>
-                <li><span class="material-icons">history</span> Histori Pelanggaran</li>
-                <li><span class="material-icons">contact_support</span> Kontak</li>
-                <li><span class="material-icons">help</span> Panduan Tata Tertib</li>
-            </ul>
-            <div class="copyright">
-                <h6>2024 Jurusan Teknologi Informasi <br>
-                Politeknik Negeri Malang</h6>
-            </div>
-
-        </div>
+        
     
+        <!--Sidebar Javascript-->
+        <script src="/page/dashboard/js/sidebar.js"></script>
+
         <!-- Main Content -->
         <div class="main-content">
             <header>

@@ -26,7 +26,8 @@ body {
   }
   
   .sidebar .logo img {
-    max-width: 100%;
+    margin-top: 24px;
+    width: 70%;
     height: auto;
   }
   
@@ -50,6 +51,20 @@ body {
   .sidebar .menu li .material-icons {
     margin-right: 10px;
   }
+
+  .menu li.active {
+    background-color: #007bff; /* Change background for the active menu */
+    color: #fff; /* Change text color for better contrast */
+    border-radius: 5px; /* Optional: rounded corners */
+  }
+  .menu li.active span {
+    color: #fff; /* Ensure the icon color matches */
+  }
+
+  .sidebar .copyright{
+    align-items: flex-end;
+    text-align: center;
+  }
   
   /* Main Content */
   .main-content {
@@ -59,7 +74,7 @@ body {
   }
   
   header {
-    text-align: center;
+    text-align: left;
     margin-bottom: 20px;
     align-items: left;
   }
@@ -78,9 +93,9 @@ body {
   
   .user-details {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 20px;
+    justify-content: left;
+    gap: 36px;
+    margin-bottom: 36px;
   }
   
   .user-details .detail {
@@ -130,7 +145,7 @@ body {
   
   .stats h2{
     background-color: #407BFF;
-    margin: 0;
+    margin-bottom: 20px;
     padding: 1rem;
     text-align: center;
     color: #ffffff;
@@ -138,25 +153,32 @@ body {
   }
 
   .stats .cards {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    margin-top: 20px;
-  }
-  
-  .card {
-    text-align: center;
+    display: flex; /* Arrange cards in a row */
+    gap: 20px; /* Add spacing between cards */
+}
+
+.stats .card {
+    flex: 5; /* Make all cards equal in size */
     padding: 20px;
-    border-radius: 10px;
-    background: #e8f4fd;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .card h3 {
-    margin-bottom: 10px;
-  }
-  
-  .card p {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
+    border-radius: 8px;
+    color: black; /* Adjust text color for contrast */
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add some depth */
+}
+
+/* Different background colors for each card */
+.stats .card.izin {
+    background-color: #9DB7FF; /* Blue */
+}
+
+.stats .card.sakit {
+    background-color: #E39DFF; /* Red */
+}
+
+.stats .card.alpha {
+    background-color: #FBC5C1; /* Yellow */
+}
+
+.stats .card.kompensasi {
+    background-color: #FFD19D; /* Green */
+}
